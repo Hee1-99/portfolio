@@ -13,22 +13,22 @@ export default function Nav() {
   const { lang, toggle, t } = useLang()
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-line bg-paper/80 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 border-b-2 border-ink bg-paper/90 backdrop-blur-md">
       <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between px-6">
         <Link
           to="/"
-          className="font-display text-sm font-semibold tracking-wide hover:text-accent transition-colors"
+          className="text-sm font-extrabold tracking-tight hover:bg-accent-pale transition-colors px-1"
         >
-          {lang === 'ko' ? '정희원' : 'Hee Won Jung'}
+          {lang === 'ko' ? '정희원' : 'HEE WON JUNG'}
         </Link>
 
-        <div className="flex items-center gap-6">
-          <ul className="hidden items-center gap-6 md:flex">
+        <div className="flex items-center gap-5">
+          <ul className="hidden items-center gap-5 md:flex">
             {links.map((link) => (
               <li key={link.hash}>
                 <Link
                   to={`/${link.hash}`}
-                  className="text-xs uppercase tracking-[0.18em] text-ink-soft hover:text-ink transition-colors"
+                  className="font-mono text-[11px] font-medium uppercase tracking-[0.08em] text-ink hover:underline decoration-accent decoration-[3px] underline-offset-4"
                 >
                   {t(link.label)}
                 </Link>
@@ -39,7 +39,7 @@ export default function Nav() {
             type="button"
             onClick={toggle}
             aria-label="Switch language"
-            className="rounded-full border border-line px-3 py-1 text-xs font-medium tracking-widest text-ink-soft hover:border-accent hover:text-accent transition-colors"
+            className="brut-press border-2 border-ink bg-paper px-2.5 py-1 font-mono text-[11px] font-semibold tracking-widest shadow-brut-sm hover:bg-accent-pale"
           >
             {lang === 'ko' ? 'EN' : 'KO'}
           </button>
