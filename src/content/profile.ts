@@ -16,6 +16,11 @@ export const profile = {
     en: '정희원',
   } satisfies Bilingual,
 
+  greeting: {
+    ko: '안녕하세요, 정희원입니다 👋',
+    en: "Hi, I'm Hee Won Jung 👋",
+  } satisfies Bilingual,
+
   headlineLead: {
     ko: '저를 한 문장으로 설명한다면,',
     en: 'If I had to describe myself in one sentence,',
@@ -30,34 +35,6 @@ export const profile = {
     ko: '아이디어를 글로만 설명하기보다, 빠르게 MVP를 만들고 실제 사용 흐름 안에서 검증하는 것을 좋아합니다.',
     en: 'Rather than describing ideas in writing, I prefer to build MVPs fast and validate them inside real user flows.',
   } satisfies Bilingual,
-
-  facts: [
-    {
-      label: { ko: '이름', en: 'Name' },
-      value: { ko: '정희원 / Hee Won Jung', en: 'Hee Won Jung (정희원)' },
-    },
-    {
-      label: { ko: '소속', en: 'Affiliation' },
-      value: {
-        ko: '서울대학교 자유전공학부 23학번',
-        en: 'Seoul National University, College of Liberal Studies, Class of 2023',
-      },
-    },
-    {
-      label: { ko: '활동', en: 'Activity' },
-      value: {
-        ko: '서울대학교 바이브코딩 동아리 DWNC',
-        en: 'DWNC, SNU vibe-coding club',
-      },
-    },
-    {
-      label: { ko: '관심 분야', en: 'Interests' },
-      value: {
-        ko: '창업, 자동차, 기계공학, 바이브코딩',
-        en: 'Startups, automobiles, mechanical engineering, vibe coding',
-      },
-    },
-  ] satisfies { label: Bilingual; value: Bilingual }[],
 
   aboutParagraphs: [
     {

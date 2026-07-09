@@ -24,7 +24,7 @@ function RisingWords({ text }: { text: string }) {
             className={`inline-block ${isMarkWord(word) ? 'bg-accent px-[0.14em] text-paper' : ''}`}
             initial={reduced ? false : { y: '115%' }}
             animate={{ y: 0 }}
-            transition={{ duration: 0.6, delay: 0.15 + i * 0.06, ease: EASE }}
+            transition={{ duration: 0.6, delay: 0.2 + i * 0.06, ease: EASE }}
           >
             {word}
           </motion.span>
@@ -45,64 +45,44 @@ export default function Hero() {
   })
 
   return (
-    <section className="mx-auto grid min-h-[88svh] max-w-5xl content-center gap-10 px-6 pt-28 pb-16 lg:grid-cols-[1fr_minmax(260px,320px)] lg:items-end lg:gap-14">
-      <div className="flex min-w-0 flex-col items-start">
-        <motion.p
-          {...fade(0.05)}
-          className="border-2 border-ink bg-paper px-3 py-1.5 font-mono text-[10px] font-medium uppercase tracking-[0.14em] shadow-brut-sm"
-        >
-          {t(profile.chip)}
-        </motion.p>
-
-        <motion.p {...fade(0.12)} className="mt-10 text-base font-medium text-ink-soft">
-          {t(profile.headlineLead)}
-        </motion.p>
-
-        <h1 className="mt-5 max-w-4xl font-display text-4xl font-extrabold leading-[1.15] tracking-tight md:text-6xl">
-          <RisingWords key={lang} text={t(profile.headline)} />
-        </h1>
-
-        <motion.p {...fade(0.5)} className="mt-8 max-w-xl leading-relaxed text-ink-soft">
-          {t(profile.headlineNote)}
-        </motion.p>
-
-        <motion.div {...fade(0.6)} className="mt-10 flex flex-wrap gap-4">
-          <Link
-            to="/#projects"
-            className="brut-press border-2 border-ink bg-accent px-5 py-3 text-sm font-bold uppercase tracking-wide text-paper shadow-brut"
-          >
-            {t(profile.heroCta.projects)}
-          </Link>
-          <Link
-            to="/#contact"
-            className="brut-press border-2 border-ink bg-paper px-5 py-3 text-sm font-bold uppercase tracking-wide shadow-brut"
-          >
-            {t(profile.heroCta.contact)}
-          </Link>
-        </motion.div>
-      </div>
-
-      <motion.aside
-        {...fade(0.35)}
-        className="self-start border-2 border-ink bg-paper shadow-brut lg:self-end"
+    <section className="mx-auto flex min-h-[88svh] max-w-5xl flex-col justify-center px-6 pt-28 pb-16">
+      <motion.p
+        {...fade(0.05)}
+        className="w-fit border-2 border-ink bg-paper px-3 py-1.5 font-mono text-[10px] font-medium uppercase tracking-[0.14em] shadow-brut-sm"
       >
-        <p className="border-b-2 border-ink bg-accent px-4 py-2 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-paper">
-          Profile
-        </p>
-        <dl>
-          {profile.facts.map((fact, i) => (
-            <div
-              key={fact.label.en}
-              className={`px-4 py-3 ${i < profile.facts.length - 1 ? 'border-b border-line' : ''}`}
-            >
-              <dt className="font-mono text-[10px] uppercase tracking-[0.16em] text-ink-soft">
-                {t(fact.label)}
-              </dt>
-              <dd className="mt-1 text-sm leading-snug">{t(fact.value)}</dd>
-            </div>
-          ))}
-        </dl>
-      </motion.aside>
+        {t(profile.chip)}
+      </motion.p>
+
+      <motion.p {...fade(0.12)} className="mt-12 text-2xl font-bold tracking-tight md:text-3xl">
+        {t(profile.greeting)}
+      </motion.p>
+
+      <motion.p {...fade(0.18)} className="mt-6 text-base font-medium text-ink-soft">
+        {t(profile.headlineLead)}
+      </motion.p>
+
+      <h1 className="mt-4 max-w-4xl font-display text-4xl font-extrabold leading-[1.15] tracking-tight md:text-6xl">
+        <RisingWords key={lang} text={t(profile.headline)} />
+      </h1>
+
+      <motion.p {...fade(0.55)} className="mt-8 max-w-xl leading-relaxed text-ink-soft">
+        {t(profile.headlineNote)}
+      </motion.p>
+
+      <motion.div {...fade(0.65)} className="mt-10 flex flex-wrap gap-4">
+        <Link
+          to="/#projects"
+          className="brut-press border-2 border-ink bg-accent px-5 py-3 text-sm font-bold uppercase tracking-wide text-paper shadow-brut"
+        >
+          {t(profile.heroCta.projects)}
+        </Link>
+        <Link
+          to="/#contact"
+          className="brut-press border-2 border-ink bg-paper px-5 py-3 text-sm font-bold uppercase tracking-wide shadow-brut"
+        >
+          {t(profile.heroCta.contact)}
+        </Link>
+      </motion.div>
     </section>
   )
 }
