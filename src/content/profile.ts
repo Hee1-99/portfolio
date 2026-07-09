@@ -73,13 +73,13 @@ export const profile = {
   focusTitle: { ko: 'Portfolio Focus', en: 'Portfolio Focus' } satisfies Bilingual,
 
   focusHighlight: {
-    ko: '작은 불편을 실제 서비스로 바꾸는 과정',
+    ko: '작은 불편을 실제 서비스로 바꾸는 일',
     en: 'turning small inconveniences into real services',
   } satisfies Bilingual,
 
   focusBody: {
-    ko: '이 포트폴리오는 “작은 불편을 실제 서비스로 바꾸는 과정”을 보여줍니다. 강의 요약, 파일 정리, 꽃집 콘텐츠 작성, 외국인 근로자 안전교육, 성경 필사 루틴처럼 서로 다른 영역의 문제를 직접 발견하고, MVP로 만들고, 배포 가능한 제품 형태로 구현했습니다.',
-    en: 'This portfolio shows the process of turning small inconveniences into real services. From lecture summaries and file organizing to flower-shop content writing, safety training for migrant workers, and Bible transcription routines — I found problems across very different domains, built MVPs, and shipped them as deployable products.',
+    ko: '저는 작은 불편을 실제 서비스로 바꾸는 일을 좋아합니다. 강의 요약, 파일 정리, 꽃집 콘텐츠 작성, 외국인 근로자 안전교육, 성경 필사 루틴 — 전혀 다른 영역이지만, 전부 제가 직접 발견한 문제에서 시작해 MVP를 만들고 배포까지 이어간 프로젝트들입니다.',
+    en: 'I enjoy turning small inconveniences into real services. Lecture summaries, file organizing, flower-shop content, safety training for migrant workers, a Bible transcription routine — very different domains, but every project here started from a problem I found myself, became an MVP, and shipped as a working product.',
   } satisfies Bilingual,
 
   whatIBuildTitle: { ko: 'What I Build', en: 'What I Build' } satisfies Bilingual,
