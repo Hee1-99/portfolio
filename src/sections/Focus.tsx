@@ -34,21 +34,6 @@ export default function Focus() {
           </p>
         </Reveal>
 
-        <Reveal delay={0.12}>
-          <p className="mt-20 font-mono text-xs uppercase tracking-[0.2em] text-ink-soft">
-            {t(profile.whatIBuildTitle)}
-          </p>
-          <ol className="mt-6 grid gap-x-12 md:grid-cols-2">
-            {profile.whatIBuild.map((item, i) => (
-              <li key={item.en} className="flex gap-5 border-b border-line py-5">
-                <span className="pt-1 font-mono text-sm font-semibold text-accent">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <span className="leading-relaxed">{t(item)}</span>
-              </li>
-            ))}
-          </ol>
-        </Reveal>
       </div>
     </section>
   )

@@ -63,27 +63,6 @@ export const profile = {
     en: 'I enjoy turning small inconveniences into real services. Lecture summaries, file organizing, flower-shop content, safety training for migrant workers, a Bible transcription routine — very different domains, but every project here started from a problem I spotted myself, became an MVP, and shipped as a working product.',
   } satisfies Bilingual,
 
-  whatIBuildTitle: { ko: 'What I Build', en: 'What I Build' } satisfies Bilingual,
-
-  whatIBuild: [
-    {
-      ko: '학습과 일상의 반복 작업을 줄이는 생산성 도구',
-      en: 'Productivity tools that cut repetitive work in study and daily life',
-    },
-    {
-      ko: 'AI를 실제 사용자 흐름에 연결하는 웹앱',
-      en: 'Web apps that connect AI to real user flows',
-    },
-    {
-      ko: '브라우저 확장 프로그램과 로컬 자동화 도구',
-      en: 'Browser extensions and local automation tools',
-    },
-    {
-      ko: '공동체·현장·창작자를 위한 문제 해결형 MVP',
-      en: 'Problem-solving MVPs for communities, worksites, and creators',
-    },
-  ] satisfies Bilingual[],
-
   skillsTitle: { ko: 'Core Skills', en: 'Core Skills' } satisfies Bilingual,
 
   skills: [
