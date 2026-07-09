@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-paper: #faf7f2;
+  --color-ink: #1c1a17;
+  --color-ink-soft: #57524a;
+  --color-line: #e3ddd2;
+  --color-accent: #b0532c;
+  --font-sans:
+    'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
+    'Segoe UI', sans-serif;
+  --font-display: 'Noto Serif KR', 'Apple SD Gothic Neo', Georgia, serif;
+}
+
+/* CSS smooth scrolling only when Lenis is not driving the scroll */
+html:not(.lenis) {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:not(.lenis) {
+    scroll-behavior: auto;
+  }
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+}
+
+::selection {
+  background-color: rgba(176, 83, 44, 0.18);
+}
