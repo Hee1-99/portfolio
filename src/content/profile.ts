@@ -23,7 +23,7 @@ export const profile = {
 
   headline: {
     ko: '문제를 발견하고 직접 만들어 해결하는 빌더',
-    en: 'A builder who finds problems and solves them by making',
+    en: 'A builder who finds problems and solves them by building',
   } satisfies Bilingual,
 
   headlineNote: {

@@ -76,8 +76,8 @@ export const projects: Project[] = [
       'Vercel',
     ],
     portfolioPoint: {
-      ko: 'AI 기능을 단순히 “생성”으로만 두지 않고, 실제 플로리스트의 업무 흐름인 촬영 → 문구 작성 → 저장 → 포스팅으로 연결했습니다. 특정 직업군의 반복 업무를 줄이는 B2B/B2C 경계의 AI 도구로 기획했다는 점이 특징입니다.',
-      en: "Rather than leaving AI at plain 'generation', it is wired into the florist's actual workflow: shoot → write → save → post. It was planned as an AI tool on the B2B/B2C boundary that reduces repetitive work for a specific profession.",
+      ko: 'AI 기능을 단순한 “생성”에 그치지 않고, 촬영 → 문구 작성 → 저장 → 포스팅이라는 플로리스트의 실제 업무 흐름에 연결했습니다. 특정 직업군의 반복 업무를 줄이는 B2B/B2C 경계의 AI 도구를 직접 기획하고 만들었다는 점에 의미를 두고 있습니다.',
+      en: "I didn't stop at plain AI 'generation' — I wired it into the florist's actual workflow: shoot → write → save → post. What matters to me here is having planned and built an AI tool on the B2B/B2C boundary that cuts repetitive work for a specific profession.",
     },
     links: [
       { label: { ko: '서비스', en: 'Service' }, url: 'https://on-hwa.com/' },
@@ -198,8 +198,8 @@ export const projects: Project[] = [
       'Vercel',
     ],
     portfolioPoint: {
-      ko: 'SafeBridge는 단순 교육 콘텐츠가 아니라 “교육 이해 → 퀴즈 검증 → 이수 증빙”까지 연결한 서비스입니다. 현장 안전, 다국어 접근성, 관리자 운영 효율이라는 문제를 하나의 워크플로우로 묶었다는 점이 강점입니다.',
-      en: 'SafeBridge is not just training content — it connects comprehension → quiz verification → completion certification into one service. Its strength is bundling site safety, multilingual accessibility, and manager efficiency into a single workflow.',
+      ko: '단순한 교육 콘텐츠가 아니라 “교육 이해 → 퀴즈 검증 → 이수 증빙”까지 이어지는 하나의 흐름을 설계했습니다. 현장 안전, 다국어 접근성, 관리자 운영 효율이라는 세 가지 문제를 한 워크플로우로 묶어낸 것이 이 프로젝트의 핵심입니다.',
+      en: 'Instead of stopping at training content, I designed one continuous flow: comprehension → quiz verification → completion certification. The heart of this project is tying three problems — site safety, multilingual accessibility, and manager efficiency — into a single workflow.',
     },
     links: [
       {
@@ -306,8 +306,8 @@ export const projects: Project[] = [
       'Vercel',
     ],
     portfolioPoint: {
-      ko: '소울피드는 단순 입력 앱이 아니라 루틴 지속 문제를 공동체 UX로 해결하려는 프로젝트입니다. 개인의 기록과 공동체의 참여감을 동시에 설계했으며, 모바일 우선 환경에서 실제 신앙 루틴이 이어지도록 사용자 흐름을 구성했습니다.',
-      en: 'SoulFeed is not a plain typing app — it tackles routine persistence through community UX. It designs personal records and communal participation together, with user flows built mobile-first so a real faith routine actually continues.',
+      ko: '단순한 입력 앱이 아니라, 루틴 지속이라는 문제를 공동체 UX로 풀어본 프로젝트입니다. 개인의 기록과 공동체의 참여감을 동시에 설계했고, 모바일 우선 환경에서 실제 신앙 루틴이 이어지도록 사용자 흐름을 구성했습니다.',
+      en: 'More than a typing app, this was my attempt to solve routine persistence through community UX. I designed personal records and communal participation together, and shaped the user flows mobile-first so a real faith routine actually continues.',
     },
     links: [
       {
@@ -405,8 +405,8 @@ export const projects: Project[] = [
       'WebSocket',
     ],
     portfolioPoint: {
-      ko: '단순한 요약 기능이 아니라, 실제 eTL 페이지의 사용 흐름 안에서 강의 정보를 감지하고 AI 백엔드로 연결한 점이 핵심입니다. 사용자가 수업 복습 과정에서 겪는 반복적인 불편을 Chrome Extension 형태로 직접 해결했습니다.',
-      en: 'The core is not the summary itself but detecting lecture info inside the real eTL usage flow and wiring it to an AI backend. It directly solves a recurring pain in class review, packaged as a Chrome extension.',
+      ko: '요약 기능 자체보다, 실제 eTL 페이지의 사용 흐름 안에서 강의 정보를 감지해 AI 백엔드로 연결했다는 점이 핵심입니다. 수업을 복습할 때마다 겪던 반복적인 불편을 Chrome Extension이라는 형태로 직접 해결했습니다.',
+      en: 'The core is not the summary itself, but detecting lecture info inside the real eTL usage flow and wiring it to an AI backend. I solved a recurring pain I felt every time I reviewed a class — packaged as a Chrome extension.',
     },
     links: [
       {
@@ -452,8 +452,8 @@ export const projects: Project[] = [
       en: 'A Chrome extension that automatically organizes files downloaded from SNU eTL into per-course folders and moves them where the user chooses.',
     },
     problem: {
-      ko: 'eTL에서 자료를 다운받을 때, 항상 자동으로 컴퓨터의 기본 Downloads 폴더로 다운받아집니다. 학생들은 이것을 일일이 확인하여 각 과목 폴더로 이동시켜야 하며 이 번거로움을 해결하고자 하였습니다.',
-      en: "Files downloaded from eTL always land in the computer's default Downloads folder. Students have to check them one by one and move them into each course folder — this tool removes that chore.",
+      ko: 'eTL에서 자료를 내려받으면 항상 컴퓨터의 기본 Downloads 폴더에 저장됩니다. 학생들은 파일을 일일이 확인해 과목별 폴더로 옮겨야 하는데, 저 역시 매 학기 겪던 이 번거로움을 해결하고 싶었습니다.',
+      en: "Files downloaded from eTL always land in the computer's default Downloads folder, and students have to check them one by one and move them into each course folder. I dealt with that chore every semester and wanted it gone.",
     },
     solution: {
       ko: '사용자가 확장 프로그램에서 과목명, 과목 URL, 저장 폴더를 한 번 등록하면, 이후 해당 eTL 과목 페이지에서 받은 파일이 자동으로 과목별 폴더에 정리됩니다. Chrome Extension과 로컬 앱을 연결해 브라우저 다운로드 이후 실제 파일 이동까지 처리합니다.',
@@ -521,8 +521,8 @@ export const projects: Project[] = [
       'Windows 10+',
     ],
     portfolioPoint: {
-      ko: '브라우저 확장 프로그램만으로는 처리하기 어려운 로컬 파일 이동 문제를 Native Messaging과 로컬 앱으로 해결했습니다. 단순한 웹 기능이 아니라 사용자의 실제 파일 관리 습관까지 연결한 생산성 도구라는 점이 강점입니다.',
-      en: "Local file moves are beyond what a browser extension alone can do, so it pairs Native Messaging with a local app. Its strength is being a productivity tool wired into users' real file-management habits, not just a web feature.",
+      ko: '브라우저 확장 프로그램만으로는 처리할 수 없는 로컬 파일 이동 문제를 Native Messaging과 로컬 앱의 조합으로 풀었습니다. 단순한 웹 기능이 아니라 사용자의 실제 파일 관리 습관까지 연결한 생산성 도구를 만들었다는 점에 의미를 두고 있습니다.',
+      en: "Local file moves are beyond what a browser extension alone can do, so I paired Native Messaging with a local app. What matters to me here is building a productivity tool wired into users' real file-management habits, not just a web feature.",
     },
     links: [
       {
