@@ -14,22 +14,12 @@ export default function About() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-12 md:grid-cols-[260px_1fr] md:gap-16">
-          <Reveal>
-            <img
-              src="/images/profile.jpg"
-              alt={t({ ko: '정희원 증명사진', en: 'Portrait of Hee Won Jung' })}
-              className="w-52 border-2 border-ink shadow-brut md:w-full"
-            />
-          </Reveal>
-
-          <div>
-            {profile.aboutParagraphs.map((p, i) => (
-              <Reveal key={i} delay={0.08 * (i + 1)}>
-                <p className="mb-6 max-w-2xl text-[1.05rem] leading-loose text-ink/90">{t(p)}</p>
-              </Reveal>
-            ))}
-          </div>
+        <div className="mt-12">
+          {profile.aboutParagraphs.map((p, i) => (
+            <Reveal key={i} delay={0.08 * (i + 1)}>
+              <p className="mb-6 max-w-2xl text-[1.05rem] leading-loose text-ink/90">{t(p)}</p>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>
