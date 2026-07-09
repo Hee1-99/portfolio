@@ -1,15 +1,24 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-paper: #faf7f2;
-  --color-ink: #1c1a17;
-  --color-ink-soft: #57524a;
-  --color-line: #e3ddd2;
-  --color-accent: #b0532c;
+  --color-paper: #faf6ee;
+  --color-paper-2: #f1ebdf;
+  --color-ink: #14120e;
+  --color-ink-soft: #57514a;
+  --color-line: #d9d2c4;
+  --color-accent: #e8541e;
+  --color-accent-press: #c64312;
+  --color-accent-pale: #ffe0d0;
   --font-sans:
     'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
     'Segoe UI', sans-serif;
-  --font-display: 'Noto Serif KR', 'Apple SD Gothic Neo', Georgia, serif;
+  --font-display:
+    'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
+    'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+  --shadow-brut-sm: 3px 3px 0 0 #14120e;
+  --shadow-brut: 4px 4px 0 0 #14120e;
+  --shadow-brut-lg: 6px 6px 0 0 #14120e;
 }
 
 /* CSS smooth scrolling only when Lenis is not driving the scroll */
@@ -37,5 +46,35 @@ body {
 }
 
 ::selection {
-  background-color: rgba(176, 83, 44, 0.18);
+  background-color: var(--color-accent-pale);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+/* Neo-brutalist pressable block: pair with `shadow-brut` */
+.brut-press {
+  transition:
+    transform 0.15s cubic-bezier(0, 0, 0.2, 1),
+    box-shadow 0.15s cubic-bezier(0, 0, 0.2, 1),
+    background-color 0.15s cubic-bezier(0, 0, 0.2, 1);
+}
+.brut-press:hover,
+.brut-press:focus-visible {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-brut-lg);
+}
+.brut-press:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brut-press,
+  .brut-press:hover,
+  .brut-press:active {
+    transform: none;
+  }
 }

@@ -177,4 +177,9 @@ export const profile = {
     skills: { ko: 'Skills', en: 'Skills' } satisfies Bilingual,
     contact: { ko: 'Contact', en: 'Contact' } satisfies Bilingual,
   },
+
+  heroCta: {
+    projects: { ko: '프로젝트 보기', en: 'See the work' } satisfies Bilingual,
+    contact: { ko: '연락하기', en: 'Get in touch' } satisfies Bilingual,
+  },
 }
