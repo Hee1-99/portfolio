@@ -86,8 +86,8 @@ export const profile = {
     {
       area: { ko: 'Product Building', en: 'Product Building' },
       keywords: {
-        ko: 'MVP 기획, 사용자 흐름 설계, 배포, 검증',
-        en: 'MVP planning, user-flow design, deployment, validation',
+        ko: 'MVP 기획, 사용자 흐름 설계, 사용자 조사, 검증',
+        en: 'MVP planning, UX flow, user research, validation',
       },
     },
     {
@@ -100,15 +100,15 @@ export const profile = {
     {
       area: { ko: 'AI Product', en: 'AI Product' },
       keywords: {
-        ko: 'Gemini API, 콘텐츠 생성, 요약, 자동화 UX',
-        en: 'Gemini API, content generation, summarization, automation UX',
+        ko: 'LLM 연동, 프롬프트 엔지니어링, AI 워크플로우 설계',
+        en: 'LLM integration, prompt engineering, AI workflow design',
       },
     },
     {
       area: { ko: 'Data & Auth', en: 'Data & Auth' },
       keywords: {
-        ko: 'Firebase, Firestore, Supabase',
-        en: 'Firebase, Firestore, Supabase',
+        ko: 'Firebase Auth, Firestore, Supabase',
+        en: 'Firebase Auth, Firestore, Supabase',
       },
     },
     {
@@ -119,10 +119,10 @@ export const profile = {
       },
     },
     {
-      area: { ko: 'Direction', en: 'Direction' },
+      area: { ko: 'Launch', en: 'Launch' },
       keywords: {
-        ko: '창업, 자동차, 기계공학, 바이브코딩',
-        en: 'Startups, automobiles, mechanical engineering, vibe coding',
+        ko: '배포, 지표 분석, 사용자 피드백, 개선 반복',
+        en: 'Deployment, analytics, user feedback, iteration',
       },
     },
   ] satisfies SkillRow[],
