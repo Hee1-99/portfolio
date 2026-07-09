@@ -12,14 +12,24 @@
   --font-display: 'Noto Serif KR', 'Apple SD Gothic Neo', Georgia, serif;
 }
 
-html {
+/* CSS smooth scrolling only when Lenis is not driving the scroll */
+html:not(.lenis) {
   scroll-behavior: smooth;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
+  html:not(.lenis) {
     scroll-behavior: auto;
   }
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
 }
 
 body {

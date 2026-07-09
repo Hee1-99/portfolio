@@ -1,5 +1,5 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
-import type { ReactNode } from 'react'
+import { useEffect, type ReactNode } from 'react'
 import { useLang } from '../i18n/LanguageContext'
 import { getProject, projects } from '../content/projects'
 import type { Bilingual, TableData } from '../content/types'
@@ -55,6 +55,15 @@ export default function ProjectDetail() {
   const { slug } = useParams()
   const { t } = useLang()
   const project = getProject(slug)
+
+  useEffect(() => {
+    if (!project) return
+    document.title = `${project.title.en} — Hee Won Jung`
+    return () => {
+      document.title = 'Hee Won Jung — Portfolio'
+    }
+  }, [project])
+
   if (!project) return <Navigate to="/" replace />
 
   const index = projects.findIndex((p) => p.slug === project.slug)
