@@ -9,6 +9,10 @@ export const projects: Project[] = [
       ko: 'AI Web App / Creator Tool / PWA',
       en: 'AI Web App / Creator Tool / PWA',
     },
+    award: {
+      ko: '모두의 창업 1라운드 선정',
+      en: 'Selected — Round 1 of “Startup for Everyone” (모두의 창업)',
+    },
     solves: {
       ko: '플로리스트의 꽃다발 이름·소개글·해시태그 작성 시간 단축 (모두의 창업 1라운드 선정)',
       en: 'Cuts the time florists spend naming bouquets and writing captions and hashtags (selected in Round 1 of “Startup for Everyone”)',

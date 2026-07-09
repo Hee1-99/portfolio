@@ -23,6 +23,7 @@ export interface Project {
   emoji: string
   title: Bilingual
   type: Bilingual
+  award?: Bilingual
   solves: Bilingual
   oneLiner: Bilingual
   problem: Bilingual

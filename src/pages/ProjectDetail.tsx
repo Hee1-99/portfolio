@@ -55,9 +55,16 @@ export default function ProjectDetail() {
             <h1 className="mt-6 text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
               {t(project.title)}
             </h1>
-            <p className="mt-5 inline-block border-2 border-ink bg-accent-pale px-2.5 py-1 font-mono text-[11px] font-semibold uppercase tracking-[0.06em]">
-              {t(project.type)}
-            </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <p className="inline-block border-2 border-ink bg-accent-pale px-2.5 py-1 font-mono text-[11px] font-semibold uppercase tracking-[0.06em]">
+                {t(project.type)}
+              </p>
+              {project.award && (
+                <p className="inline-block border-2 border-ink bg-accent px-2.5 py-1 font-mono text-[11px] font-semibold tracking-[0.02em] text-paper">
+                  🏆 {t(project.award)}
+                </p>
+              )}
+            </div>
             <p className="mt-8 text-lg leading-relaxed text-ink/90">{t(project.oneLiner)}</p>
 
             <div className="mt-8 flex flex-wrap gap-4">
