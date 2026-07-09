@@ -22,22 +22,38 @@ export default function Footer() {
         <Reveal delay={0.1}>
           <dl className="mt-16 grid gap-4 sm:grid-cols-3">
             {[
-              { label: 'Email', href: `mailto:${contact.email}`, text: contact.email, external: false },
-              { label: 'Phone', href: `tel:${contact.phone}`, text: contact.phone, external: false },
-              { label: 'GitHub', href: contact.github, text: contact.githubLabel, external: true },
+              {
+                label: 'Email',
+                links: contact.emails.map((email) => ({
+                  href: `mailto:${email}`,
+                  text: email,
+                  external: false,
+                })),
+              },
+              {
+                label: 'Phone',
+                links: [{ href: `tel:${contact.phone}`, text: contact.phone, external: false }],
+              },
+              {
+                label: 'GitHub',
+                links: [{ href: contact.github, text: contact.githubLabel, external: true }],
+              },
             ].map((item) => (
               <div key={item.label} className="border-2 border-ink bg-paper shadow-brut-sm">
                 <dt className="border-b border-line px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-ink-soft">
                   {item.label}
                 </dt>
-                <dd className="px-4 py-3">
-                  <a
-                    href={item.href}
-                    {...(item.external ? { target: '_blank', rel: 'noreferrer' } : {})}
-                    className="text-sm font-medium hover:underline decoration-accent decoration-[3px] underline-offset-4 break-all"
-                  >
-                    {item.text}
-                  </a>
+                <dd className="flex flex-col gap-1.5 px-4 py-3">
+                  {item.links.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      {...(link.external ? { target: '_blank', rel: 'noreferrer' } : {})}
+                      className="text-sm font-medium hover:underline decoration-accent decoration-[3px] underline-offset-4 break-all"
+                    >
+                      {link.text}
+                    </a>
+                  ))}
                 </dd>
               </div>
             ))}

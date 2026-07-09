@@ -142,7 +142,7 @@ export const profile = {
   } satisfies Bilingual,
 
   contact: {
-    email: 'ctlover99@gmail.com',
+    emails: ['ctlover99@gmail.com', 'ctlover99@snu.ac.kr'],
     phone: '010-6707-6806',
     github: 'https://github.com/Hee1-99',
     githubLabel: 'github.com/Hee1-99',
