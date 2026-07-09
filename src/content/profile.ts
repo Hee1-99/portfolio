@@ -38,12 +38,16 @@ export const profile = {
 
   aboutParagraphs: [
     {
-      ko: '안녕하세요, 저는 서울대학교 자유전공학부 23학번 정희원입니다. 현재 창업, 자동차, 기계공학, 바이브코딩에 관심이 있으며, 서울대학교 바이브코딩 동아리 DWNC에서 활동하고 있습니다.',
-      en: "Hello, I'm Hee Won Jung, class of 2023 at Seoul National University's College of Liberal Studies. I'm interested in startups, automobiles, mechanical engineering, and vibe coding, and I'm active in DWNC, SNU's vibe-coding club.",
+      ko: '서울대학교 자유전공학부 23학번 정희원입니다. 현재 창업, AI, 자동차, 기계공학에 관심을 가지고 있으며, 서울대학교 바이브코딩 동아리 DWNC에서 활동하고 있습니다.',
+      en: "I'm Hee Won Jung, class of 2023 at Seoul National University's College of Liberal Studies. I'm interested in startups, AI, automobiles, and mechanical engineering, and I'm active in DWNC, SNU's vibe-coding club.",
     },
     {
-      ko: '저는 기술을 단순히 배우는 데서 멈추기보다, 직접 문제를 발견하고 해결책을 만들어 실제 사용할 수 있는 형태로 구현하는 것에 흥미를 느낍니다. 앞으로도 분야에 제한을 두지 않고, 새로운 가치를 창출해내는 빌더로 성장하고자 합니다.',
-      en: "Rather than stopping at learning technology, I enjoy discovering problems myself, building solutions, and shipping them in a form people can actually use. I aim to keep growing as a builder who creates new value without limiting myself to any single field.",
+      ko: '저는 좋은 아이디어를 떠올리는 것보다 실제로 구현해 사용자에게 전달하는 과정에 더 큰 가치를 둡니다. 새로운 기술이 등장하면 이를 단순히 학습하는 데 그치지 않고, 문제를 정의하고 MVP를 제작한 뒤 사용자 반응을 확인하며 서비스를 개선하는 과정을 반복해 왔습니다.',
+      en: "I place more value on building an idea and delivering it to users than on simply coming up with one. When a new technology appears, I don't stop at learning it — I define a problem, build an MVP, watch how users respond, and keep improving the service.",
+    },
+    {
+      ko: '특히 AI와 웹 기술을 활용해 실제로 사용할 수 있는 서비스를 만드는 데 관심이 많으며, 기획부터 개발, 배포, 운영까지 제품 개발의 전 과정을 직접 경험하고 있습니다. 앞으로도 기술을 수단으로 삼아 다양한 분야의 문제를 해결하고, 사용자에게 새로운 가치를 제공하는 빌더이자 창업가로 성장하고자 합니다.',
+      en: "I'm especially drawn to building services people actually use with AI and web technology, and I've been through the whole product cycle myself — planning, development, deployment, and operation. I want to keep growing as a builder and founder who treats technology as a means to solve problems across fields and deliver new value to users.",
     },
   ] satisfies Bilingual[],
 
