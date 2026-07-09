@@ -19,7 +19,7 @@ export default function Nav() {
           to="/"
           className="text-sm font-extrabold tracking-tight hover:bg-accent-pale transition-colors px-1"
         >
-          {lang === 'ko' ? '정희원' : 'HEE WON JUNG'}
+          Hee Won Jung’s Portfolio
         </Link>
 
         <div className="flex items-center gap-5">
