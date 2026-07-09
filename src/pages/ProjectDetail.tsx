@@ -2,7 +2,6 @@ import { Link, Navigate, useParams } from 'react-router-dom'
 import { useEffect, type ReactNode } from 'react'
 import { useLang } from '../i18n/LanguageContext'
 import { getProject, projects } from '../content/projects'
-import type { Bilingual, TableData } from '../content/types'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
@@ -13,41 +12,6 @@ function SectionHeading({ index, children }: { index: string; children: ReactNod
       <span className="font-display">{index}</span>
       {children}
     </h2>
-  )
-}
-
-function FutureTable({ table, t }: { table: TableData; t: (b: Bilingual) => string }) {
-  return (
-    <div>
-      <h4 className="text-xs uppercase tracking-[0.2em] text-ink-soft">{t(table.title)}</h4>
-      <div className="mt-4 overflow-x-auto">
-        <table className="w-full min-w-[560px] border-collapse text-sm">
-          <thead>
-            <tr className="border-b border-ink/20 text-left">
-              {table.headers.map((h) => (
-                <th
-                  key={h.en}
-                  className="py-3 pr-6 text-xs font-medium uppercase tracking-[0.14em] text-ink-soft"
-                >
-                  {t(h)}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {table.rows.map((row, i) => (
-              <tr key={i} className="border-b border-line align-top">
-                {row.map((cell, j) => (
-                  <td key={j} className="py-3 pr-6 leading-relaxed">
-                    {t(cell)}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
   )
 }
 
@@ -231,57 +195,6 @@ export default function ProjectDetail() {
               </blockquote>
             </section>
           </Reveal>
-
-          {project.future && (
-            <Reveal>
-              <section className="mt-20 rounded-xl border border-line bg-white/50 p-8 md:p-10">
-                <p className="text-xs uppercase tracking-[0.24em] text-accent">
-                  {t({ ko: '추후 개발해볼 것', en: 'Future Work' })}
-                </p>
-                <h3 className="mt-4 font-display text-2xl font-semibold leading-snug">
-                  {t(project.future.title)}
-                </h3>
-                <p className="mt-6 leading-loose text-ink/90">{t(project.future.intro)}</p>
-                <p className="mt-6 border-l-2 border-accent pl-5 text-sm leading-relaxed text-ink-soft">
-                  {t(project.future.oneLiner)}
-                </p>
-
-                <div className="mt-10 space-y-10">
-                  {project.future.tables.map((table) => (
-                    <FutureTable key={table.title.en} table={table} t={t} />
-                  ))}
-                </div>
-
-                <h4 className="mt-12 text-xs uppercase tracking-[0.2em] text-ink-soft">
-                  {t({ ko: '기대 효과', en: 'Expected Effects' })}
-                </h4>
-                <ul className="mt-4 space-y-3">
-                  {project.future.effects.map((effect) => (
-                    <li key={effect.en} className="flex gap-3 text-sm leading-relaxed">
-                      <span className="text-accent" aria-hidden>
-                        —
-                      </span>
-                      {t(effect)}
-                    </li>
-                  ))}
-                </ul>
-
-                <h4 className="mt-10 text-xs uppercase tracking-[0.2em] text-ink-soft">
-                  {t({ ko: '추가 확장 아이디어', en: 'Expansion Ideas' })}
-                </h4>
-                <ul className="mt-4 space-y-3">
-                  {project.future.ideas.map((idea) => (
-                    <li key={idea.en} className="flex gap-3 text-sm leading-relaxed">
-                      <span className="text-accent" aria-hidden>
-                        —
-                      </span>
-                      {t(idea)}
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            </Reveal>
-          )}
 
           <nav className="mt-20 flex items-center justify-between border-t border-line pt-8 text-sm">
             <Link

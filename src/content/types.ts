@@ -18,21 +18,6 @@ export interface FlowGroup {
   steps: Bilingual[]
 }
 
-export interface TableData {
-  title: Bilingual
-  headers: Bilingual[]
-  rows: Bilingual[][]
-}
-
-export interface FutureSection {
-  title: Bilingual
-  intro: Bilingual
-  oneLiner: Bilingual
-  tables: TableData[]
-  effects: Bilingual[]
-  ideas: Bilingual[]
-}
-
 export interface Project {
   slug: string
   emoji: string
@@ -48,7 +33,6 @@ export interface Project {
   portfolioPoint: Bilingual
   links: ProjectLink[]
   images: ProjectImage[]
-  future?: FutureSection
 }
 
 export interface SkillRow {
