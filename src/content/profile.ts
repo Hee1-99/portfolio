@@ -79,7 +79,7 @@ export const profile = {
 
   focusBody: {
     ko: '저는 작은 불편을 실제 서비스로 바꾸는 일을 좋아합니다. 강의 요약, 파일 정리, 꽃집 콘텐츠 작성, 외국인 근로자 안전교육, 성경 필사 루틴 — 전혀 다른 영역이지만, 전부 제가 직접 발견한 문제에서 시작해 MVP를 만들고 배포까지 이어간 프로젝트들입니다.',
-    en: 'I enjoy turning small inconveniences into real services. Lecture summaries, file organizing, flower-shop content, safety training for migrant workers, a Bible transcription routine — very different domains, but every project here started from a problem I found myself, became an MVP, and shipped as a working product.',
+    en: 'I enjoy turning small inconveniences into real services. Lecture summaries, file organizing, flower-shop content, safety training for migrant workers, a Bible transcription routine — very different domains, but every project here started from a problem I spotted myself, became an MVP, and shipped as a working product.',
   } satisfies Bilingual,
 
   whatIBuildTitle: { ko: 'What I Build', en: 'What I Build' } satisfies Bilingual,
@@ -154,7 +154,7 @@ export const profile = {
 
   projectsIntro: {
     ko: '서로 다른 영역에서 직접 발견한 문제를 배포 가능한 제품으로 만들었습니다.',
-    en: 'Problems I found myself across different domains, shipped as deployable products.',
+    en: 'Each project started from a problem I spotted myself and ended as a shipped product.',
   } satisfies Bilingual,
 
   closingTitle: { ko: 'Closing', en: 'Closing' } satisfies Bilingual,
@@ -179,7 +179,7 @@ export const profile = {
   },
 
   heroCta: {
-    projects: { ko: '프로젝트 보기', en: 'See the work' } satisfies Bilingual,
+    projects: { ko: '프로젝트 보기', en: 'View projects' } satisfies Bilingual,
     contact: { ko: '연락하기', en: 'Get in touch' } satisfies Bilingual,
   },
 }

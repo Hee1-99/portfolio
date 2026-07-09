@@ -44,7 +44,7 @@ export default function ProjectsGrid() {
                 </p>
 
                 <p className="mt-auto pt-6 font-mono text-[11px] font-semibold uppercase tracking-[0.12em]">
-                  {t({ ko: '자세히 보기', en: 'View case' })}{' '}
+                  {t({ ko: '자세히 보기', en: 'View project' })}{' '}
                   <span aria-hidden className="text-accent">
                     →
                   </span>

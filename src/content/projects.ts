@@ -114,8 +114,8 @@ export const projects: Project[] = [
       en: 'Verifies comprehension and certifies completion of safety training for migrant workers',
     },
     oneLiner: {
-      ko: '안전 관리 가이드 문서를 교육 카드와 퀴즈로 바꾸고, 근로자는 QR 링크로 교육을 완료하며, 관리자는 대시보드에서 이수 상태를 확인할 수 있는 서비스입니다.',
-      en: 'Turns safety-management guides into training cards and quizzes; workers complete training via a QR link, and managers track completion on a dashboard.',
+      ko: '안전 관리 가이드를 교육 카드와 퀴즈로 바꿔, 근로자는 QR 링크만으로 교육을 마치고 관리자는 대시보드에서 이수 현황을 확인하는 서비스입니다.',
+      en: 'Turns safety-management guides into training cards and quizzes — workers finish training with just a QR link, and managers track completion on a dashboard.',
     },
     problem: {
       ko: '제조·건설 현장에서는 안전 교육이 중요하지만, 한국어가 서툰 외국인 근로자는 안전 가이드를 충분히 이해하기 어렵습니다. 단순히 문서를 보여주는 것만으로는 실제 이해도를 확인하기 어렵고, 누가 언제 어떤 내용을 학습했는지 증빙하기도 어렵습니다.',
@@ -132,10 +132,10 @@ export const projects: Project[] = [
         ko: '다국어 안전 교육 콘텐츠 구성',
         en: 'Multilingual safety-training content',
       },
-      { ko: 'QR 교육 링크 발급', en: 'QR training-link issuance' },
+      { ko: 'QR 교육 링크 발급', en: 'QR training links' },
       {
         ko: '근로자 본인 정보 입력 후 교육 진행',
-        en: 'Training after simple worker identification',
+        en: 'Simple identity entry before training',
       },
       { ko: '퀴즈 기반 이해도 검증', en: 'Quiz-based comprehension checks' },
       { ko: '이수 기록 저장', en: 'Completion-record storage' },
@@ -234,8 +234,8 @@ export const projects: Project[] = [
       en: 'Keeps Bible transcription going as a community routine instead of a solo habit that fades',
     },
     oneLiner: {
-      ko: '혼자 하면 쉽게 끊기는 성경 필사를 개인 기록과 함께 필사방을 통해 꾸준히 이어가도록 돕는 성경 필사 루틴 웹앱입니다.',
-      en: 'A Bible-transcription routine web app that keeps an easily-broken solo habit going through personal records and shared transcription rooms.',
+      ko: '혼자 하면 쉽게 끊기는 성경 필사를 개인 기록과 “함께 필사방”으로 꾸준히 이어가도록 돕는 루틴 웹앱입니다.',
+      en: 'A routine web app that keeps easily-broken solo Bible transcription going, through personal records and shared transcription rooms.',
     },
     problem: {
       ko: '성경 필사는 의미 있는 루틴이지만, 혼자 지속하기는 어렵습니다. 기존 개인 필사 앱은 조용히 성경을 타이핑하는 경험에 집중하는 경우가 많아, 소그룹·가족·교회 공동체가 함께 루틴을 유지하는 경험은 부족합니다.',
@@ -339,7 +339,7 @@ export const projects: Project[] = [
     },
     problem: {
       ko: '온라인 강의는 필요한 부분을 다시 찾기 어렵고, 긴 강의를 복습하는 데 시간이 많이 걸립니다. 특히 eTL 강의 영상은 수업별로 반복해서 확인해야 하는 경우가 많아, 핵심 내용을 빠르게 정리해주는 도구가 필요했습니다.',
-      en: 'In online lectures it is hard to find the part you need again, and reviewing long videos takes a lot of time. eTL lecture videos in particular need repeated checking per class, so a tool that quickly organizes the key content was needed.',
+      en: 'In online lectures it is hard to find the part you need again, and reviewing long videos takes a lot of time. eTL lecture videos in particular need repeated checking per class, so I wanted a tool that quickly pulls out the key points.',
     },
     solution: {
       ko: 'eTL 강의 페이지에서 강의 정보와 영상 정보를 감지하고, 확장 프로그램 팝업에서 사용자가 요약을 요청하면 백엔드가 AI 요약을 생성합니다. 사용자는 간단 요약/상세 요약, 한국어/영어 요약을 선택할 수 있고, 최근 요약 기록을 브라우저에 저장해 다시 확인할 수 있습니다.',
@@ -516,7 +516,7 @@ export const projects: Project[] = [
       'JavaScript',
       'Chrome Downloads API',
       'Chrome Native Messaging',
-      'Python 기반 로컬 앱',
+      'Python Local App',
       'PowerShell / Inno Setup',
       'Windows 10+',
     ],
