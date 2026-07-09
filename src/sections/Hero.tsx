@@ -54,7 +54,7 @@ export default function Hero() {
           {t(profile.chip)}
         </motion.p>
 
-        <motion.p {...fade(0.12)} className="mt-10 font-mono text-xs uppercase tracking-[0.2em] text-ink-soft">
+        <motion.p {...fade(0.12)} className="mt-10 text-base font-medium text-ink-soft">
           {t(profile.headlineLead)}
         </motion.p>
 

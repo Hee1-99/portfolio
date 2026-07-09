@@ -15,7 +15,11 @@
   --font-display:
     'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
     'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+  /* Korean glyphs are missing from JetBrains Mono — fall back to Pretendard
+     so mono-styled labels render consistently in both languages */
+  --font-mono:
+    'JetBrains Mono', 'Pretendard Variable', Pretendard,
+    'Apple SD Gothic Neo', ui-monospace, monospace;
   --shadow-brut-sm: 3px 3px 0 0 #14120e;
   --shadow-brut: 4px 4px 0 0 #14120e;
   --shadow-brut-lg: 6px 6px 0 0 #14120e;
